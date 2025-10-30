@@ -1,0 +1,308 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 24px 0px 24px 0px; 
+
+}
+
+
+/* menu */
+
+nav {
+    background-color: #0A2647;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    color: #fff;
+}
+
+/* bee mau rubah text nav-list disini!*/
+.nav-list a {
+    position: relative;
+    text-decoration: none; 
+    color: #fff;
+
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: #fff;
+    transition: transform 0.25s ease-out;
+}
+.nav-list a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 45px;
+}
+
+/* 
+* hero/jumbotron
+ */
+ 
+ header {
+    background: url('../asset/bgupn.png');
+    height: 100vh;
+    background-position: center center;
+    background-size: center;
+    position: relative;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+
+ }
+
+ .header-opacity {
+    background-color: #0A2647;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+ }
+
+ .header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+
+ }
+
+ .header-jumbotron > h4 {
+    color: whitesmoke;
+    font-size: 2rem;
+ }
+
+ .header-jumbotron > h5 {
+    color: whitesmoke;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+ }
+
+ a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+ }
+
+ .button {
+    background-color: #144272;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+ }
+
+ .button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+    color: #fff;
+
+ }
+
+ /* about me */
+
+ #aboutme {
+        background-color: #0A2647;
+        color: #fff;
+ }
+
+#aboutme > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.logo2 > img {
+    height: 240px;
+}
+
+/* my contact */
+
+#mycontact {
+    color: #0A2647;
+}
+
+#mycontact {
+     text-align: center;
+    font-size: 2.2rem;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    color: #0A2647;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+    height: auto;
+}
+
+#certificate .grid {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.grid > .item {
+    padding: 10%;
+    background-color: #205295;
+    border-radius: 25px;
+
+}
+
+.grid > .item > img {
+    width: 25%;
+    margin: 20px;
+
+
+}
+
+.grid > .item > a {
+    font-size: 20px;
+    color:  white;
+    background-color:  #0A2647;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    border-radius: 15px;
+}
+
+/* contact 2.0 */
+
+#certificate {
+    background-color: #0A2647;
+    color: #fff;
+    padding:0px;
+}
+
+#certificate > .wrapper > h4 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 20px;
+    padding: 0%;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#certificate > .wrapper > .grid > .dewangga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #205295;
+    border-radius: 20px;
+    margin: 0px;
+    width: 80px;
+    perspective: 1000px;
+ 
+}
+
+.button1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0A2647;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.6s ease;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.button1:hover {
+    background-color: #144272;
+    transform: rotateY(180deg);
+}
+
+.button1 img {
+    width: 25px !important;
+    height: 45px !important;
+    max-width: 25px !important;
+    max-height: 25px !important;
+    margin-bottom: 15px;
+    object-fit: contain;
+    gap: 25px;
+}
+
+.dewangga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #205295;
+    border-radius: 60px;
+    margin: 20px;
+}
+
+
+/* responsive */
